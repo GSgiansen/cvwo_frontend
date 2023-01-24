@@ -1,0 +1,89 @@
+.post{
+    background-color: white;
+    margin: 10px;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 10px;
+
+}
+.select{
+    margin-top: 6px;
+    display: flex;
+}
+.testID{
+    font-weight: bold;
+    margin-right: 12px;
+    font-style: italic;
+    font-size: 1.75rem;
+}
+.tag{
+    display: flex;
+    margin-left: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.35rem;
+    align-items: center;
+    padding: 2px;
+}
+
+.userid{
+    padding: 5px;
+    color: rgb(67, 66, 66);
+    font-weight: bold;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content{
+    padding: 5px;
+    text-align: start;
+    margin: auto;
+    overflow-wrap: break-word;
+}
+
+.newpost{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+input[type=text] {
+    width: 100%;
+    height: 7.5vh;
+    box-sizing: border-box;
+    text-align: center;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+.postheader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.postbutton{
+    margin: 5px;
+    background-color: rgb(64, 64, 243);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    text-align: center;
+    padding: 8px;
+
+}
+
+.posttext{
+    display: flex;
+    padding: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content:space-evenly
+    
+
+}

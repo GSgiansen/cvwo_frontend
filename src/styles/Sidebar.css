@@ -1,0 +1,14 @@
+*{
+    font-family: 'Chivo Mono', monospace;
+}
+.sidebar{
+    font-size: 2rem;
+    margin-top: 32px;
+
+}
+
+.drawContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}

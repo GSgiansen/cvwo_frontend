@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color:black;
+    color: white;
+    height: 10vh;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 2rem;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}

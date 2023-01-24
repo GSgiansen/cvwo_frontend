@@ -1,0 +1,57 @@
+input[type=text] {
+    width: 50%;
+    padding:12px 20px;
+    margin: px 0;
+    box-sizing: border-box;
+
+  }
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(117, 117, 117);
+    height: 50vh;
+    max-width: 40vw;;
+    font-family: 'Chivo Mono', monospace;
+    color: white;
+    border-radius: 25px;
+    
+}
+
+
+.text-control input{
+  margin:10px;
+  max-width: 20vw;
+  color: grey;
+}
+.text-control label{
+  margin:20px;
+}
+
+.text-control{
+  font-size:1.5rem;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginheader{
+  font-size: 1.5rem;
+  margin: 32px;
+}
+
+.btn{
+  margin: 32px;
+  background-color: black;
+  color:white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+}

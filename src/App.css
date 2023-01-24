@@ -1,0 +1,7 @@
+.App{
+    background-color:grey;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+}
