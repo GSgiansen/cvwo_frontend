@@ -20,7 +20,7 @@ const Newpost = ({addPost,testID}) => {
       <form>
         <div className="postheader">
           <div className="posttext">
-            <div className="testID"> {testID} </div> is spilling...
+            <div className="testID"> {testID =="" ? "Someone " :testID} </div> is spilling...
 
           </div>
           <div className='select'>
