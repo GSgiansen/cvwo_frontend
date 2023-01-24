@@ -78,7 +78,7 @@ function App() {
       <header className="main-body">
       <Newpost addPost={addPost} testID={testID}/>
       <FilterByTagButton onFilter={filterPostList} getAll={fetchPostList}/>
-        <Wall posts={posts} onDelete={delPost}/>
+        <Wall posts={posts} onDelete={delPost} testID={testID}/>
       </header>
     </div>
   );

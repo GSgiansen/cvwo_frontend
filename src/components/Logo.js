@@ -3,7 +3,7 @@ import s from "../styles/Logo.css"
 const Logo = () => {
   return (
     <div className="icon">
-    TeaPartea
+    TeaParTea
     <img className="icon" src="./sprout.png"/>
     </div>
   )

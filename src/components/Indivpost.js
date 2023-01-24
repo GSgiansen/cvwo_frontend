@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "../styles/Indivpost.css"
 import {FaTimes} from 'react-icons/fa'
-const Indivpost = ({id, userid,content,tag, onDelete}) => {
+const Indivpost = ({testID, id, userid,content,tag, onDelete}) => {
   return (
     
     <div className='post'>
@@ -15,7 +15,9 @@ const Indivpost = ({id, userid,content,tag, onDelete}) => {
           }}
           >{tag}</div>
           </div>
-          <FaTimes onClick={()=> onDelete(id)}/>
+          {
+            testID == userid ? <FaTimes onClick={()=> onDelete(id)}/> :  ""
+          }
         </div>
         <p></p>
         <div className='content'>{content}</div>

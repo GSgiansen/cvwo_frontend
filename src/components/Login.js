@@ -6,6 +6,9 @@ import { NavLink, Link } from "react-router-dom";
 import App from "../App";
 const Login = () => {
   const onLogin = () => {
+    if(userID == ""){
+      alert("Username cannot be empty!")
+    }
     setUserID("");
   };
   const [userID, setUserID] = useState("");
@@ -28,15 +31,22 @@ const Login = () => {
           <label>Password</label>
           <input type="text" />
         </div>
+        {
+          userID !== "" 
+          ?(
+            <Link 
+            to={"/"}
+            state={userID}>
+    
+              <button className="btn" type="button" onClick={onLogin}>
+                Login
+              </button>
+            </Link>
+          )
+          :
+          <div className="text-control">Fill in username!</div>
 
-        <Link 
-        to={"/"}
-        state={userID}>
-
-          <button className="btn" type="button" onClick={onLogin}>
-            Login
-          </button>
-        </Link>
+        }
       </form>
     </>
   );
