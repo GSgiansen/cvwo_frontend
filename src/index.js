@@ -11,6 +11,7 @@ import {
 import SignIn from "./pages/signin"
 import About from "./pages/about"
 import Profile from './pages/profile';
+import SignUp from "./pages/signup";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <Profile/>,
+  },
+  {
+    path: "/signup",
+    element: <SignUp/>,
   }
 
 ]);

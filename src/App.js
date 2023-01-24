@@ -6,12 +6,12 @@ import Wall from './components/Wall';
 import Newpost from './components/Newpost';
 import Indivpost from './components/Indivpost';
 import { ChakraProvider } from '@chakra-ui/react'
-import { NavLink } from 'react-router-dom';
+
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import FilterByTagButton from './components/FilterByTagButton';
 
-function App() {
+function App({route,navigation}) {
   const {state}= useLocation();
   const testID=state
   const [posts,setPosts]=useState([])

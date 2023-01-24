@@ -52,6 +52,9 @@ function Sidebar() {
             <Link to="/signin" className="sidebar">
               Sign In
             </Link>
+            <Link to="/signup" className="sidebar">
+              Sign Up
+            </Link>
           </DrawerBody>
 
           <DrawerFooter>

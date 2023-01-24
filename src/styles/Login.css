@@ -31,6 +31,7 @@ input[type=text] {
 }
 
 .text-control{
+  margin: 20px;
   font-size:1.5rem;
 }
 
@@ -44,11 +45,10 @@ input[type=text] {
 
 .loginheader{
   font-size: 1.5rem;
-  margin: 32px;
+  margin: 16px;
 }
 
 .btn{
-  margin: 32px;
   background-color: black;
   color:white;
   padding: 12px;
