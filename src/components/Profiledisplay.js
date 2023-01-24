@@ -35,7 +35,7 @@ const Profiledisplay = () => {
     <div className="display">
       <Profilepic userID={userID} length={posts.length}/>
       <div>
-        <PersonalWall posts={posts} delPost={delPost}/>
+        <PersonalWall posts={posts} delPost={delPost} testID={userID}/>
       </div>
 
     </div>
