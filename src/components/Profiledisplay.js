@@ -10,7 +10,7 @@ const Profiledisplay = () => {
 
   const userID = state;
   console.log(userID)
-  const postsURL="http://localhost:3000/api/v1/posts"
+  const postsURL="https://cvwo-backend-7cq1.onrender.com/api/v1/posts"
   const [posts,setPosts]=useState([])
   const fetchPostList  = () => {
       console.log("posts fetched")
