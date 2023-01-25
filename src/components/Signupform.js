@@ -76,7 +76,7 @@ const Signupform = () => {
           ?(
     
               <button className="btn" type="button" onClick={createUser}>
-                Login
+                Sign up
               </button>
           )
           :
