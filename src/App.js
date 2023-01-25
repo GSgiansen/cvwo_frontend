@@ -16,6 +16,7 @@ function App({route,navigation}) {
   const testID=state
   const [posts,setPosts]=useState([])
   const postsURL="https://cvwo-backend-7cq1.onrender.com/api/v1/posts"
+  //const postsURL="http://localhost:3000/api/v1/posts"
   const cors = require("cors")
 
   //adds the post to the database and display on webstie
@@ -32,7 +33,7 @@ function App({route,navigation}) {
     })
     .then(response => response.json())
     .then((lol) => {
-      setPosts([...posts,lol.data].reverse())})
+      setPosts([lol.data,...posts].reverse())})
 
   }
 
