@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Signupform = () => {
     const [username, setUserID] = useState("");
     const [password, setPassword] = useState("");
-    const usersURL = "http://localhost:3000/users"
+    const usersURL = "https://cvwo-backend-7cq1.onrender.com/users"
     const navigate = useNavigate();
 
     const createUser  = () => {
