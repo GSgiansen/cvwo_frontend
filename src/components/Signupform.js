@@ -1,22 +1,48 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const Signupform = () => {
     const [username, setUserID] = useState("");
     const [password, setPassword] = useState("");
     const usersURL = "http://localhost:3000/users"
+    const navigate = useNavigate();
 
     const createUser  = () => {
         console.log("creating new user")
+
         fetch(usersURL,{
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
               },
-              method: "POST",
-              body: JSON.stringify({username, password})
+              method: "GET",
+              body: JSON.stringify()
             })
+            .then((response) => response.json())
+            .then((data) => {
+                let res = data.filter((user) => user.username === username)
+                console.log(res)
+                if (res.length >=1){
+                    alert("Username is already taken!")
+
+                }
+                else{
+                    fetch(usersURL,{
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                          },
+                          method: "POST",
+                          body: JSON.stringify({username, password})
+                        })
+                    navigate("/",{state:username})
+                }
+
+
+            })
+
 
         
       }
@@ -48,14 +74,10 @@ const Signupform = () => {
         {
           username !== "" 
           ?(
-            <Link 
-            to={"/"}
-            state={username}>
     
               <button className="btn" type="button" onClick={createUser}>
                 Login
               </button>
-            </Link>
           )
           :
           <div className="text-control">Fill in username!</div>
